@@ -1,0 +1,97 @@
+.main{
+
+    height: 2088px;
+
+    .head{
+        display: flex;
+        height: 237px;
+        width: 1440px;
+        margin-inline: auto;
+
+        .block{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 237px;
+            width: 100%;
+            margin-inline: 70px;
+
+            .block__head-text{
+                font-size: 64px;
+                font-weight: 400;
+            }
+
+
+        }
+    }
+
+    .blocks{
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        margin-inline: auto;
+        height: 100%;
+        width: 1300px;
+
+        .course{
+            display: flex;
+            width: 1300px;
+            height: 545px;
+            background-color: #000000;
+            border-radius: 32px;
+
+            &:not(:first-child){
+                height: 512px;
+            }
+
+            .landing{
+                margin: 40px;
+            }
+
+            @keyframes go-right{
+                from{
+                    translate: 0vw;
+                    opacity: 0;
+
+                }
+            }
+
+            .information{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-block: 40px;
+
+                animation-name: go-right;
+                animation-fill-mode: both;
+                animation-timing-function: linear;
+
+                view-timeline-name: --go-to-right;
+                animation-timeline: --go-to-right;
+                animation-range: 10% 40%;
+
+                &__title{
+                    background-color: #191919;
+                    padding-inline: 16px;
+                    border-radius: 6px;
+                }
+
+                &__episode{
+                    margin-top: 38px;
+                    color: #118DA8;
+                    font-size: 17px;
+                }
+
+                &__main-text{
+                    font-size: 64px;
+                    line-height: 70.4px;
+                }
+
+                &__text{
+                    font-size: 22px;
+                    color: rgb(255 255 255 / 0.7);
+                }
+            }
+        }
+    }
+}

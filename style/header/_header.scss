@@ -1,0 +1,49 @@
+@import "../variable/varible.css";
+@import "./header_footer/header_footer";
+
+.header{
+    display: flex;
+    flex-direction: column;
+    width: var(--width-block);
+    height: 119px;
+    margin-inline: auto;
+
+
+    .title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-inline: 70px;
+        margin-block: auto;
+
+        .navigation{
+            user-select: none;
+            .navigation__size{
+                display: flex;
+                column-gap: 20px;
+                margin-right: 70px;
+                
+                .navigation__size-link{
+                    display: flex;
+                    align-items: center;
+                    list-style-type:  none;
+                    height: 50px;
+
+                    &:hover{
+                        border-bottom: 1px solid #ffffff;
+                    }
+
+                    &:first-child{
+                        color: #118DA8;
+                    }
+                    
+                    .link{
+                        color: currentColor;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+}

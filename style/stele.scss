@@ -1,0 +1,47 @@
+//Блоки сайта
+@import "./header/header";
+@import "./main/main";
+@import "./jacob/jacob";
+@import "./initialization/initialization";
+@import "./feedback/feedback";
+@import "./footer/footer";
+
+
+//Нормализатор
+@import "./normolize/normolize";
+
+//Шрифт
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+//Переменные
+@import "./variable/varible.css";
+
+body{
+    background-color: #191919;
+    font-family: var(--family-font);
+    color: #ffffff;
+    font-size: 17px;
+}
+
+button{
+    background-color: #118DA8;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 15px 12px 20px;
+    font-size: 17px;
+    line-height: 27px;
+    transition: 0.5s;
+    user-select: none;
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 5px 5px 10px rgb(19 19 19 / 0.7) inset;
+        border-radius: 15px;
+    }
+
+        .button__link{
+            color: currentColor;
+            text-decoration: none;
+        }
+}

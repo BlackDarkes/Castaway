@@ -1,0 +1,82 @@
+.bottom-initialization{
+    height: 587px;
+    width: 100%;
+
+    &__block{
+        position: relative;
+        width: 1440px;
+        height: 387px;
+        margin-inline: auto;
+        z-index: 100;
+
+        .initialization{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 1300px;
+            height: 387px;
+            background-color: #000000;
+            margin-inline: auto;
+            border-radius: 32px;
+            z-index: 100;
+
+            &::before{
+                position: relative;
+                right: 40px;
+                top: 330px;
+                height: 97px;
+                width: 147px;
+                content: url(/site/image/initialization/3line.png);
+                z-index: 0;
+            }
+
+            .initialization-sub{
+                position: relative;
+                right: 80px;
+                margin-block: 60px 142px;
+                width: 400px;
+                z-index: 100;
+
+                &__email{
+                    font-size: 18px;
+                    color: #118DA8;
+                }
+
+                &__subscribe{
+                    font-size: 72px;
+                    line-height: 79.2px;
+                }
+            }
+
+            .initialization-input{
+                margin: 60px;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                width: 600px;
+
+                .formation{
+                    width: 100%;
+                    display: flex;
+                    justify-content: end;
+                    flex-direction: column;
+
+                    .input__forma{
+                        background-color: #191919;
+                        color: rgb(255 255 255 / 0.7);
+                        border: 0;
+                        height: 82px;
+                        width: 522px;
+                        margin-bottom: 20px;
+                        border-radius: 6px;
+                        padding-left: 19px;
+                        
+                        &:focus{
+                            outline: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

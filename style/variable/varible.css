@@ -1,0 +1,11 @@
+:root{
+    --width-block: 1440px;
+    --left-margin: 50px;
+    --color-bg: #191919;
+
+    --family-font: "DM Sans", sans-serif;
+    --regular-font: 400;
+    --bold-font: 600;
+
+    --border: 1px solid black;
+}

@@ -1,0 +1,77 @@
+.jacob{
+    height: 943px;
+    width: 100%;
+
+    &__block{
+        display: flex;
+        column-gap: 100px;
+        height: 100%;
+        width: 1440px;
+        margin-inline: auto;
+
+        @keyframes go-right{
+            from{
+                translate: -5vw;
+                opacity: 0;
+            }
+        }
+
+        .jacob-information__first{
+            display: flex;
+            align-items: center;
+            height: 743px;
+            animation-name: go-right;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+
+            view-timeline-name: --go-to-right;
+            animation-timeline: --go-to-right;
+            animation-range: 15% 40%;
+
+            .jacob-information{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                column-gap: 60px;
+                margin-left: 70px;
+                height: 430px;
+
+
+                &__button-block{
+
+                    .button-jacob{
+                        height: 112px;
+                        width: 112px;
+                        border-radius: 50%;
+                    }
+                }
+
+                &__host{
+                    margin-top: 40px;
+                    font-size: 18px;
+                    color: #118DA8;
+                }
+
+                &__title{
+                    font-size: 65px;
+                }
+
+                &__text{
+                    font-size: 22px;
+                    margin-top: 20px;
+                    color: rgb(255 255 255 / 0.7);
+                    line-height: 33px;
+                }
+            }
+        }
+
+        .jacob-image{
+
+
+            &__foto{
+                height: auto;
+                width: auto;
+            }
+        }
+    }
+}
